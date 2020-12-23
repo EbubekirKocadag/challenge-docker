@@ -22,17 +22,17 @@ Then you can clone this repesitory with:
 In this project, you have a Dockerfile which is creating an image to do that you have to run in terminal `docker build . -t 'nameofyourimage'`.
 This will create the following structure:
 
-/app
-    |-docker
-    |   |-Dockerfile -> your Dockerfile
-    |-pipeline
-    |   |
-    |   |-model
-    |   |    |-model.py -> print a number between 1 and 400
-    |   |-preprocessing
-    |   |    |-preprocessing.py -> print a numpy array
-    |   |-utils
-    |   |    |-utils.py -> print "in progress..."
+    /app
+        |-docker
+        |   |-Dockerfile -> your Dockerfile
+        |-pipeline
+        |   |
+        |   |-model
+        |   |    |-model.py -> print a number between 1 and 400
+        |   |-preprocessing
+        |   |    |-preprocessing.py -> print a numpy array
+        |   |-utils
+        |   |    |-utils.py -> print "in progress..."
     
 Once you have created your image, you can run it with `docker run -t nameofyourimage`. If you want to run the bash you only need to add `:latest bash`
 after the previous code.
